@@ -32,7 +32,63 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.push {
+  flex-grow: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+@media (max-height: 600px) {
+  .content {
+    overflow-y: scroll;
   }
 }
